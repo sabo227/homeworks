@@ -1,0 +1,38 @@
+C:\Users\user\.jdks\corretto-11.0.21\bin\java.exe "-javaagent:C:\_Soft\IntelliJ IDEA Community Edition 2023.2.5\lib\idea_rt.jar=51528:C:\_Soft\IntelliJ IDEA Community Edition 2023.2.5\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\user\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.18.jar;C:\Users\user\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.18.jar;C:\Users\user\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-2.1.0.jar;C:\Users\user\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.12.18.jar;C:\Users\user\AppData\Roaming\JetBrains\IdeaIC2023.2\plugins\Scala\lib\runners.jar scala.tools.nsc.MainGenericRunner -usejavacp -Xnojline
+Welcome to Scala 2.12.18 (OpenJDK 64-Bit Server VM, Java 11.0.21).
+Type in expressions for evaluation. Or try :help.
+
+scala> println("Hello Scala! This is Artem Novikov")
+Hello Scala! This is Artem Novikov
+
+scala> def hello(hello: String) = println(hello + " Scala! This is Artem Novikov")
+hello: (hello: String)Unit
+
+scala> val hellos = "Hello" :: "Hola" :: "Guten tag"
+<console>:11: error: value :: is not a member of String
+       val hellos = "Hello" :: "Hola" :: "Guten tag"
+                                      ^
+
+scala> val hellos = "Hello" :: "Hola" :: "Guten tag" :: Nil
+hellos: List[String] = List(Hello, Hola, Guten tag)
+
+scala> for (h <- hellos) hello(h)
+Hello Scala! This is Artem Novikov
+Hola Scala! This is Artem Novikov
+Guten tag Scala! This is Artem Novikov
+
+scala> def hello(hello: String, name: String) = println(hello + " Scala! This is " + name)
+hello: (hello: String, name: String)Unit
+
+scala> val names = "Artem Novikov" :: "Artem Novikov".reverse :: Nil
+names: List[String] = List(Artem Novikov, vokivoN metrA)
+
+scala> for (h <- hellos; n <- names) hello(h, n)
+Hello Scala! This is Artem Novikov
+Hello Scala! This is vokivoN metrA
+Hola Scala! This is Artem Novikov
+Hola Scala! This is vokivoN metrA
+Guten tag Scala! This is Artem Novikov
+Guten tag Scala! This is vokivoN metrA
+
+scala>

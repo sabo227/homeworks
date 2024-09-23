@@ -1,0 +1,5 @@
+[debug] Created transactional ClassFileManager with tempDir = C:\_Projects\Scala\naumen.scala.course.2024.spring\homeworks\homework_1\task_3\untitled\project\target\scala-2.12\sbt-1.0\classes.bak
+[debug] About to delete class files:
+[debug] We backup class files:
+[debug] Created transactional ClassFileManager with tempDir = C:\_Projects\Scala\naumen.scala.course.2024.spring\homeworks\homework_1\task_3\untitled\project\target\scala-2.12\sbt-1.0\classes.bak
+[debug] Removing the temporary directory used for backing up class files: C:\_Projects\Scala\naumen.scala.course.2024.spring\homeworks\homework_1\task_3\untitled\project\target\scala-2.12\sbt-1.0\classes.bak
