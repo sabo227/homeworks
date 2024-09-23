@@ -5,7 +5,7 @@ object Main {
   }
 
   val hellos = "Hello" :: "Hola" :: "Guten tag" :: Nil
-  val names = "Viktor Mikhailov" :: "Viktor Mikhailov".reverse :: Nil
+  val names = "Artem Novikov" :: "Artem Novikov".reverse :: Nil
 
   def main(args: Array[String]): Unit = {
     for (h <- hellos; n <- names) hello(h, n)
